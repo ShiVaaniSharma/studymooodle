@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTAB Certificate Verification</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Using Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito:wght@300;400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-area">
+                <!-- Replace with your actual MTAB logo -->
+                <img src="ab-logo.png" alt="MTAB Technology Center Logo" class="logo-img">
+                <span class="org-name"> <strong>MTAB</strong> Technology Center</span>
+            </div>
+            <h1 class="page-title">Internship Certificate Verification</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="verification-content-box">
+                <div class="status-banner verified">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Certificate Status: Verified</span>
+                </div>
+
+                <div class="certificate-info">
+                    <h2>Shivani Sharma</h2>
+
+                    <p>This confirms that <strong>Shivani Sharma</strong> has successfully completed a <strong>5-month internship</strong> at MTAB Technology Center.</p>
+
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <span class="detail-label">Internship Period:</span>
+                            <span class="detail-value">23rd December 2024 to 23rd May 2025</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Role:</span>
+                            <span class="detail-value">Web Development Intern</span>
+                        </div>
+                    </div>
+
+                    <p class="contributions">
+                        During this period, she demonstrated strong dedication, a proactive learning attitude,
+                        and significant contributions to multiple projects.
+                    </p>
+                    <p class="validation-statement">
+                        Her performance and skills have been officially documented and validated by the organization.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="currentYear"></span> MTAB Technology Center. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

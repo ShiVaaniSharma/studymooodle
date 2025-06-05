@@ -1,0 +1,245 @@
+:root {
+    --mtab-primary: #005A9C; /* Example MTAB Blue */
+    --mtab-secondary: #003366; /* Darker Blue */
+    --verified-green-text: #155724;
+    --verified-green-bg: #d4edda;
+    --verified-green-border: #c3e6cb;
+    --text-color: #333;
+    --border-color: #e0e0e0;
+    --white: #fff;
+    --font-body: 'Lato', sans-serif;
+    --font-heading: 'Roboto', sans-serif;
+    --font-body: 'Nunito', 'Lato', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('empty-bg.avif');
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+strong{
+    color: #e7142f;
+}
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background-color: #fffffff2; 
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    position: relative; 
+    z-index: 10;
+    font-family: var(--font-heading);
+
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.org-name {
+    font-family: var(--font-heading);
+    font-size: 1.4em;
+    font-weight: 500;
+    color: var(--mtab-primary);
+}
+
+.page-title {
+    font-family: var(--font-heading);
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 0;
+}
+
+
+main {
+    flex-grow: 1;
+    padding: 30px 0; 
+    position: relative; 
+    z-index: 5;
+}
+
+.verification-content-box {
+    background-color: var(--white); 
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15); 
+    overflow: hidden;
+}
+
+.status-banner {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-banner.verified {
+    background-color: var(--verified-green-bg);
+    color: var(--verified-green-text);
+    border-bottom: 1px solid var(--verified-green-border);
+}
+
+.status-banner i {
+    font-size: 1.3em;
+}
+
+.certificate-info {
+    padding: 25px;
+}
+
+.certificate-info h2 {
+    font-family: var(--font-heading);
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--mtab-secondary);
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.certificate-info p {
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.certificate-info strong {
+    font-weight: 700;
+    color: var(--mtab-primary);
+}
+
+.details-grid {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9; 
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.detail-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+.detail-item:last-child {
+    margin-bottom: 0;
+}
+
+.detail-label {
+    font-weight: 700;
+    color: #555;
+    min-width: 150px;
+    margin-right: 10px;
+}
+
+.detail-value {
+    color: var(--text-color);
+}
+
+.contributions, .validation-statement {
+    font-size: 0.95em;
+    color: #444;
+}
+
+.validation-statement {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed var(--border-color);
+    font-style: italic;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    /* background-color: rgba(255, 223, 93, 0.514);  */
+    background-color: #ffffffda; 
+
+    color: #000000; 
+    text-align: center;
+    padding: 20px 0; 
+    font-size: 0.9em; 
+    margin-top: auto;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); 
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: var(--white); 
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .header-content {
+        align-items: flex-start;
+        text-align: left;
+    }
+    .logo-area {
+        margin-bottom: 5px;
+    }
+    .org-name {
+        font-size: 1.2em;
+    }
+    .page-title {
+        font-size: 1em;
+    }
+    .certificate-info h2 {
+        font-size: 1.5em;
+    }
+    .status-banner {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+    .certificate-info {
+        padding: 20px;
+    }
+    .detail-label {
+        min-width: 100%;
+        margin-bottom: 3px;
+    }
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
